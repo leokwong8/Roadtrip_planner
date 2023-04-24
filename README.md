@@ -25,7 +25,7 @@ Then replace your API Key in planner.py.
     # Replace 'your_api_key' with your actual OpenRouteService API key
     client = openrouteservice.Client(key='your_api_key')
 ```
-You do not have to have the Google Maps API Key to run the program, unless you want to add more acquire more data.
+You do not have to have the Google Maps API Key to run the program, unless you want to acquire more data.
 
 ## Run the project
 
