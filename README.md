@@ -7,7 +7,8 @@ geospatial data and some routing algorithms, my road trip planner will provide u
 a comprehensive and optimized route from point A to point B.
 
 ## Environment Set-up
-Download all the files to your working directory.
+Download all the files to your working directory, then run following command in the terminal.
+
 ```bash
 conda env create -n ENV_NAME_YOU_WANT --file environment.yml
 ```
@@ -34,7 +35,7 @@ Activate the environment with following command
 conda activate ENV_NAME_YOU_WANT
 ```
 
-Run app.py file.
+Run app.py file in terminal.
 ```bash
 Python3 app.py
 ```
