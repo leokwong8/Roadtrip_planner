@@ -2,10 +2,8 @@ import folium
 import openrouteservice
 import geopandas as gpd
 import pandas as pd
-import webbrowser
 from geopy.geocoders import Nominatim
-from shapely.geometry import Point, LineString
-from shapely.ops import nearest_points
+from shapely.geometry import LineString
 
 
 def create_html_map(start_input, dest_input):
@@ -19,7 +17,7 @@ def create_html_map(start_input, dest_input):
     attractions_gdf = pd.concat([tourist_attractions_gdf, national_parks])
 
     # Replace 'your_api_key' with your actual OpenRouteService API key
-    client = openrouteservice.Client(key='5b3ce3597851110001cf624855194dc0c63a4c6c9d6db25d7fcb45b6')
+    client = openrouteservice.Client(key='your_api_key')
 
     # Define the route coordinates
     coordinates = [
@@ -63,6 +61,5 @@ def create_html_map(start_input, dest_input):
             icon=folium.Icon(color='green', icon='tree', prefix='fa'),
             popup=folium.Popup(row['Name'], max_width=250)
         ).add_to(map_route)
-    filename = start_input.split(',')[0]+'_to_ '+dest_input.split(',')[0]+'.html'
     map_route.save('route_map.html')
 
