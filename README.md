@@ -9,12 +9,15 @@ a comprehensive and optimized route from point A to point B.
 ## Environment Set-up
 Download all the files to your working directory.
 ```bash
-conda env create -n ENVNAME --file environment.yml
+conda env create -n ENV_NAME_YOU_WANT --file environment.yml
 ```
-Replace ENVNAME to your virual environment
 
 ## API key
 You can sign up OpenRouteService account here https://openrouteservice.org/dev/#/signup. "IT IS FREE!"
+![Alt text](https://github.com/leokwong8/Roadtrip_planner/blob/main/signup.png?raw=true)
+
+Once you signed up, log in to create token and obtain your API key.
+![Alt text](https://github.com/leokwong8/Roadtrip_planner/blob/main/create_token.jpg?raw=true)
 
 Then replace your API Key in planner.py.
 ```Python
@@ -28,9 +31,8 @@ You do not have to have the Google Maps API Key to run the program, unless you w
 
 Activate the environment with following command
 ```bash
-conda activate ENVNAME
+conda activate ENV_NAME_YOU_WANT
 ```
-Replace ENVNAME to your virual environment
 
 Run app.py file.
 ```bash
